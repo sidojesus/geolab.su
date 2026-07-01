@@ -1252,16 +1252,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
-.equip-card__icon {
-  color: var(--color-primary-light);
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 38px;
-  opacity: 0.9;
-}
-
 .equip-card__title {
   font-size: 0.85rem;
   color: var(--color-white);
@@ -1288,6 +1278,373 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .equip-card__specs li:first-child {
   border-top: none;
   padding-top: 0;
+}
+
+/* ---- Equipment Card Visuals (CSS illustrations) ---- */
+.equip-visual {
+  position: relative;
+  width: 80px;
+  height: 76px;
+  margin: 0 auto 8px;
+}
+
+/* ====== 1. CHCNAV i80 – GNSS receiver with satellite signal ====== */
+.equip-visual--i80 .gnss__body {
+  position: absolute;
+  bottom: 8px; left: 50%;
+  transform: translateX(-50%);
+  width: 40px; height: 28px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #4d6065 0%, #2d3e42 100%);
+  border: 1px solid #6d8085;
+}
+.equip-visual--i80 .gnss__stripe {
+  position: absolute;
+  top: 4px; left: 5px; right: 5px;
+  height: 3px;
+  border-radius: 2px;
+  background: #E8923A;
+}
+.equip-visual--i80 .gnss__screen {
+  position: absolute;
+  bottom: 5px; left: 50%;
+  transform: translateX(-50%);
+  width: 14px; height: 8px;
+  border-radius: 1px;
+  background: #8aaaaa;
+  opacity: 0.5;
+}
+.equip-visual--i80 .gnss__led {
+  position: absolute;
+  top: 8px; right: 5px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 5px #4ade80;
+  animation: ledPulse 1.5s ease-in-out infinite;
+}
+.equip-visual--i80 .gnss__ant {
+  position: absolute;
+  bottom: 34px; left: 50%;
+  transform: translateX(-50%);
+  width: 6px; height: 12px;
+  border-radius: 3px 3px 0 0;
+  background: #6d8085;
+}
+.equip-visual--i80 .gnss__wave {
+  position: absolute;
+  bottom: 46px; left: 50%;
+  transform: translateX(-50%);
+  width: 10px; height: 10px;
+  border: 1.5px solid var(--color-primary-light);
+  border-radius: 50%;
+  animation: waveExpand 2.4s ease-out infinite;
+}
+.equip-visual--i80 .gnss__wave--2 { animation-delay: 0.8s; }
+.equip-visual--i80 .gnss__wave--3 { animation-delay: 1.6s; }
+
+/* ====== 2. CHCNAV i30 – GNSS with UHF radio wave ====== */
+.equip-visual--i30 .gnss__body--slim {
+  position: absolute;
+  bottom: 8px; left: 50%;
+  transform: translateX(-50%);
+  width: 34px; height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #4d6065 0%, #2d3e42 100%);
+  border: 1px solid #6d8085;
+}
+.equip-visual--i30 .gnss__stripe--blue {
+  position: absolute;
+  top: 3px; left: 4px; right: 4px;
+  height: 3px;
+  border-radius: 2px;
+  background: #4A9EC8;
+}
+.equip-visual--i30 .gnss__led--blue {
+  position: absolute;
+  top: 6px; right: 4px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #60a5fa;
+  box-shadow: 0 0 5px #60a5fa;
+  animation: ledPulse 1.8s ease-in-out infinite;
+}
+.equip-visual--i30 .gnss__ant--short {
+  position: absolute;
+  bottom: 30px; left: 50%;
+  transform: translateX(-50%);
+  width: 4px; height: 8px;
+  border-radius: 2px 2px 0 0;
+  background: #6d8085;
+}
+/* RF waves from UHF modem */
+.equip-visual--i30 .rf__wave {
+  position: absolute;
+  left: 50%;
+  border: 1.5px solid var(--color-primary-light);
+  border-radius: 50%;
+  opacity: 0;
+  animation: rfPulse 2s ease-out infinite;
+}
+.equip-visual--i30 .rf__wave--1 {
+  bottom: 36px; width: 12px; height: 12px; margin-left: -6px;
+}
+.equip-visual--i30 .rf__wave--2 {
+  bottom: 42px; width: 22px; height: 22px; margin-left: -11px;
+  animation-delay: 0.65s;
+}
+.equip-visual--i30 .rf__wave--3 {
+  bottom: 48px; width: 32px; height: 32px; margin-left: -16px;
+  animation-delay: 1.3s;
+}
+
+/* ====== 3. EFT TS1 – Total Station with red laser ====== */
+.equip-visual--ts .ts__base {
+  position: absolute;
+  bottom: 6px; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 8px solid #3d5055;
+}
+.equip-visual--ts .ts__body {
+  position: absolute;
+  bottom: 14px; left: 50%;
+  transform: translateX(-50%);
+  width: 26px; height: 16px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #5a7075 0%, #3d5055 100%);
+  border: 1px solid #6d8085;
+}
+.equip-visual--ts .ts__display {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 13px; height: 7px;
+  border-radius: 1px;
+  background: #7a9a9a;
+  opacity: 0.4;
+}
+.equip-visual--ts .ts__scope {
+  position: absolute;
+  bottom: 26px; left: 50%;
+  transform: translateX(-50%);
+  width: 34px; height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #6d8085 0%, #4d6065 100%);
+  border: 1px solid #7d9095;
+}
+.equip-visual--ts .ts__lens {
+  position: absolute;
+  bottom: 27px; right: 10px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #2a3c3e;
+  border: 1px solid #5a7075;
+}
+/* Laser beam and dot */
+.equip-visual--ts .ts__beam {
+  position: absolute;
+  bottom: 29px; right: -4px;
+  width: 14px; height: 2px;
+  background: linear-gradient(90deg, #ff4040, transparent);
+  opacity: 0.7;
+  animation: laserBeam 1.2s ease-in-out infinite;
+}
+.equip-visual--ts .ts__laser {
+  position: absolute;
+  bottom: 28px; right: 8px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #ff2020;
+  box-shadow: 0 0 6px #ff4040;
+  animation: laserDot 1.2s ease-in-out infinite;
+}
+
+/* ====== 4. Leica TS06 – Precision total station with green laser ====== */
+.equip-visual--leica .ts__base--leica {
+  position: absolute;
+  bottom: 6px; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 7px solid #3d5055;
+}
+.equip-visual--leica .ts__body--leica {
+  position: absolute;
+  bottom: 13px; left: 50%;
+  transform: translateX(-50%);
+  width: 28px; height: 18px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(180deg, #6d8085 0%, #4d6065 100%);
+  border: 1px solid #7d9095;
+}
+.equip-visual--leica .ts__display--leica {
+  position: absolute;
+  top: 4px; left: 3px;
+  width: 14px; height: 8px;
+  border-radius: 1px;
+  background: #7a9a9a;
+  opacity: 0.4;
+}
+.equip-visual--leica .leica__badge {
+  position: absolute;
+  top: 4px; right: 3px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-primary-light);
+  opacity: 0.6;
+}
+.equip-visual--leica .ts__scope--leica {
+  position: absolute;
+  bottom: 28px; left: 50%;
+  transform: translateX(-50%);
+  width: 38px; height: 9px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #7d9095 0%, #4d6065 100%);
+  border: 1px solid #8da0a5;
+}
+.equip-visual--leica .ts__lens--leica {
+  position: absolute;
+  bottom: 29px; right: 10px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #1a2c2e;
+  border: 1px solid var(--color-primary-light);
+}
+/* Green laser beam */
+.equip-visual--leica .leica__beam {
+  position: absolute;
+  bottom: 30px; right: -4px;
+  width: 16px; height: 2px;
+  background: linear-gradient(90deg, #4ade80, transparent);
+  opacity: 0.6;
+  animation: leicaLaser 1.4s ease-in-out infinite;
+}
+.equip-visual--leica .leica__laser {
+  position: absolute;
+  bottom: 29px; right: 8px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #4ade80;
+  animation: laserDot 1.4s ease-in-out infinite;
+}
+
+/* ====== 5. Radiodetection CAT4+ – Cable locator ====== */
+.equip-visual--cat .cat__body {
+  position: absolute;
+  bottom: 6px; left: 50%;
+  transform: translateX(-50%);
+  width: 26px; height: 32px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #4d6065 0%, #2d3e42 100%);
+  border: 1px solid #6d8085;
+}
+.equip-visual--cat .cat__screen {
+  position: absolute;
+  top: 4px; left: 50%;
+  transform: translateX(-50%);
+  width: 16px; height: 11px;
+  border-radius: 1px;
+  background: #7a9a9a;
+  opacity: 0.3;
+}
+.equip-visual--cat .cat__btn {
+  position: absolute;
+  bottom: 4px; left: 50%;
+  transform: translateX(-50%);
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  border: 1px solid #6d8085;
+}
+.equip-visual--cat .cat__handle {
+  position: absolute;
+  bottom: 38px; left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 0;
+  border-bottom: 8px solid #4d6065;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.equip-visual--cat .cat__handle::after {
+  content: '';
+  position: absolute;
+  top: -4px; left: 50%;
+  transform: translateX(-50%);
+  width: 16px; height: 4px;
+  border-radius: 2px;
+  background: #4d6065;
+}
+.equip-visual--cat .cat__antenna {
+  position: absolute;
+  bottom: 46px; left: 50%;
+  transform: translateX(-50%);
+  width: 2px; height: 10px;
+  border-radius: 1px;
+  background: #6d8085;
+}
+.equip-visual--cat .cat__antenna::after {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px;
+  width: 6px; height: 2px;
+  border-radius: 1px;
+  background: var(--color-primary-light);
+  opacity: 0.5;
+}
+/* Detection signal going down */
+.equip-visual--cat .cat__sig {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--color-primary-light);
+  opacity: 0;
+  animation: detSignal 2s ease-out infinite;
+}
+.equip-visual--cat .cat__sig--2 {
+  margin-top: 8px;
+  animation-delay: 0.65s;
+}
+.equip-visual--cat .cat__sig--3 {
+  margin-top: 16px;
+  animation-delay: 1.3s;
+}
+
+/* ---- Animations ---- */
+@keyframes ledPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+@keyframes waveExpand {
+  0% { transform: translateX(-50%) scale(0.5); opacity: 0.7; }
+  100% { transform: translateX(-50%) scale(2.5); opacity: 0; }
+}
+@keyframes rfPulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0; }
+}
+@keyframes laserBeam {
+  0%, 100% { opacity: 0.3; width: 10px; }
+  50% { opacity: 0.9; width: 18px; }
+}
+@keyframes leicaLaser {
+  0%, 100% { opacity: 0.2; width: 12px; }
+  50% { opacity: 0.8; width: 20px; }
+}
+@keyframes laserDot {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+}
+@keyframes detSignal {
+  0% { opacity: 0.6; }
+  100% { opacity: 0; margin-top: 20px; }
 }
 
 @media (max-width: 820px) {
