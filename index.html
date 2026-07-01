@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoLab — Геодезия в Крыму | Топосъёмка, лазерное сканирование, кадастровые работы</title>
+  <meta name="description" content="GeoLab — профессиональные геодезические работы в Крыму и по всей России. Топографическая съёмка, лазерное сканирование, вынос участков, кадастровые работы. Работаем в сложных условиях: горы, лес, без сигнала спутников.">
+  <meta name="keywords" content="геодезия, топосъемка, лазерное сканирование, кадастровые работы, Крым, вынос участков, геодезические работы, лазерный сканер">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='28' font-size='28'%3E📐%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">
+          <span class="compass">
+            <span class="compass__needle"></span>
+          </span>
+          <span class="lidar-dots">
+            <span></span><span></span><span></span><span></span>
+          </span>
+        </span>
+        <span class="logo__text">
+          <span class="logo__title">Geo<span class="logo__accent">Lab</span></span>
+          <span class="logo__subtitle">ГеоЛаборатория</span>
+        </span>
+      </a>
+      <div class="theme-switcher" id="themeSwitcher">
+        <button class="theme-btn theme-btn--default active" data-theme="" title="Крым (по умолчанию)"></button>
+        <button class="theme-btn theme-btn--marine" data-theme="marine" title="Морская"></button>
+        <button class="theme-btn theme-btn--terra" data-theme="terra" title="Терракота"></button>
+        <button class="theme-btn theme-btn--lavender" data-theme="lavender" title="Лаванда"></button>
+      </div>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+          <li><a href="#certificates" class="nav__link">Сертификаты</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Связаться</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__badge">Геодезические работы в Крыму и РФ</span>
+        <h1 class="hero__title">
+          Работаем там,<br>
+          <span class="text-accent">где другие не могут</span>
+        </h1>
+        <p class="hero__subtitle">
+          Топографическая съёмка • Лазерное сканирование • Кадастровые работы<br>
+          Опыт работы в горной, лесистой местности и в условиях отсутствия сигнала
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Рассчитать стоимость</a>
+          <a href="#services" class="btn btn--outline">Наши услуги</a>
+        </div>
+        <div class="hero__features">
+          <div class="hero__feature">
+            <span class="hero__feature-icon">⛰</span>
+            <span>Горы и лес</span>
+          </div>
+          <div class="hero__feature">
+            <span class="hero__feature-icon">📡</span>
+            <span>Без сигнала GPS</span>
+          </div>
+          <div class="hero__feature">
+            <span class="hero__feature-icon">🎯</span>
+            <span>Точность до 2 см</span>
+          </div>
+          <div class="hero__feature">
+            <span class="hero__feature-icon">🗺</span>
+            <span>До 30 Га за выезд</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Направления</span>
+        <h2 class="section__title">Что мы делаем</h2>
+        <p class="section__desc">Полный комплекс геодезических работ — от классической топосъёмки до высокоточного лазерного сканирования</p>
+      </div>
+
+      <!-- Classic Geodesy -->
+      <div class="services__group">
+        <h3 class="services__group-title">Классическая геодезия</h3>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">📋</div>
+            <h4 class="service-card__title">Топографическая съёмка</h4>
+            <p class="service-card__desc">Создание топопланов масштаба 1:500 — 1:5000 с нанесением рельефа, коммуникаций и ситуации.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">📍</div>
+            <h4 class="service-card__title">Вынос границ участка</h4>
+            <p class="service-card__desc">Вынос поворотных точек в натуру по координатам. Закрепление границ на местности.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">📐</div>
+            <h4 class="service-card__title">Определение границ</h4>
+            <p class="service-card__desc">Уточнение местоположения границ земельного участка с подготовкой межевого плана.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🗄</div>
+            <h4 class="service-card__title">Кадастровые работы</h4>
+            <p class="service-card__desc">Межевание, технические планы, акты обследования, постановка на кадастровый учёт.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🔍</div>
+            <h4 class="service-card__title">Поиск коммуникаций</h4>
+            <p class="service-card__desc">Трассопоиск и съёмка подземных инженерных сетей с составлением исполнительной документации.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🏗</div>
+            <h4 class="service-card__title">Сопровождение строек</h4>
+            <p class="service-card__desc">Геодезический контроль строительства, исполнительные съёмки, вертикальная планировка.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">📏</div>
+            <h4 class="service-card__title">Вертикальная планировка</h4>
+            <p class="service-card__desc">Подсчёт объёмов земляных работ, построение цифровой модели рельефа территории.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">📋</div>
+            <h4 class="service-card__title">Все виды инженерных изысканий</h4>
+            <p class="service-card__desc">Геология, экология, гидрометеорология, геофизика, геодезия для строительства и проектирования.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Laser Scanning -->
+      <div class="services__group">
+        <h3 class="services__group-title">Лазерное сканирование</h3>
+        <div class="services__grid">
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🌄</div>
+            <h4 class="service-card__title">Рельеф местности</h4>
+            <p class="service-card__desc">Высокоточная съёмка рельефа лазерным сканером. Построение ЦМР с точностью до 2 см на 100 м.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🧮</div>
+            <h4 class="service-card__title">Сетка и модель рельефа</h4>
+            <p class="service-card__desc">Построение регулярной сетки (GRID) и TIN-модели рельефа для проектирования и подсчёта объёмов.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">⛰</div>
+            <h4 class="service-card__title">Склады сыпучих материалов</h4>
+            <p class="service-card__desc">Быстрый замер объёмов щебня, песка, грунта на складах. Точный расчёт без остановки работ.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🌲</div>
+            <h4 class="service-card__title">Труднодоступные места</h4>
+            <p class="service-card__desc">Съёмка в горной, лесистой местности, оврагах, обрывах — там, где не пройти с тахеометром и нет сигнала.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🏢</div>
+            <h4 class="service-card__title">Поэтажные планы</h4>
+            <p class="service-card__desc">Быстрая съёмка внутренних помещений и зданий с высокой точностью. Облака точек для BIM.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🚇</div>
+            <h4 class="service-card__title">Тоннели и подземные сооружения</h4>
+            <p class="service-card__desc">Сканирование тоннелей, подземных парковок, коллекторов без необходимости спутникового сигнала.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🏟</div>
+            <h4 class="service-card__title">Съёмка площадок</h4>
+            <p class="service-card__desc">Сканирование открытых площадок до 30 Га за один выезд. Полное облако точек территории.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">🔄</div>
+            <h4 class="service-card__title">Обработка облаков точек</h4>
+            <p class="service-card__desc">Регистрация, классификация, экспорт в CAD/GIS/BIM. Работа с данными любого сканера.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT + ADVANTAGES ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">О компании</span>
+        <h2 class="section__title">Геодезия там, где другие не рискуют</h2>
+        <p class="section__desc">Крым — уникальный регион с горным рельефом, лесистой местностью и нестабильным спутниковым сигналом. Мы знаем, как здесь работать.</p>
+      </div>
+
+      <div class="about__content">
+        <div class="about__text">
+          <p>Большинство геодезических компаний используют исключительно спутниковое оборудование и пасуют перед условиями Крыма: густая растительность, горная местность, каньоны, отсутствие GSM и GPS-сигнала.</p>
+          <p><strong>Наш подход иной.</strong> Помимо GNSS-оборудования мы используем <strong>лазерный сканер</strong> и классические методы геодезии (тахеометр, нивелир), что позволяет работать в любых условиях — под землёй, в лесном массиве, в ущельях и на сложном рельефе.</p>
+          <p>Собственный кадастровый инженер со&nbsp;допуском&nbsp;СРО, регулярная поверка оборудования, полный цикл работ — от&nbsp;замера до&nbsp;регистрации в&nbsp;ЕГРН.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num" data-target="8">0</span>
+              <span class="stat__label">лет опыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-target="500">0</span>
+              <span class="stat__label">объектов</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-target="30">0</span>
+              <span class="stat__label">регионов РФ</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-target="99">0</span>
+              <span class="stat__label">% точность</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__card">
+            <div class="about__card-icon">⛰️</div>
+            <h4>Горная местность</h4>
+            <p>Крымские горы — не проблема. Сканер и тахеометр не боятся отсутствия неба.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">🌲</div>
+            <h4>Лесистая местность</h4>
+            <p>Густая растительность не блокирует сигнал — мы работаем без спутников.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">📡</div>
+            <h4>Без сигнала GPS</h4>
+            <p>Методы классической геодезии + лазерный сканер не требуют спутникового сигнала.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">🚛</div>
+            <h4>Выезд по всей РФ</h4>
+            <p>Выезжаем в любой регион России. Есть загранпаспорт — работаем за рубежом.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EQUIPMENT BANNER ========== -->
+  <section class="section equipment">
+    <div class="container">
+      <div class="equipment__inner">
+        <div class="equipment__info">
+          <span class="section__label">Оборудование</span>
+          <h2 class="equipment__title">Лазерный сканер</h2>
+          <p class="equipment__desc">Современный мобильный лазерный сканер для высокоточной съёмки объектов любой сложности</p>
+          <ul class="equipment__specs">
+            <li><span>Точность:</span> до 2 см на 100 м</li>
+            <li><span>Площадь:</span> до 30 Га за один выезд</li>
+            <li><span>Скорость:</span> миллионы точек в секунду</li>
+            <li><span>Работа:</span> без спутникового сигнала</li>
+          </ul>
+        </div>
+          <div class="equipment__visual">
+            <div class="equipment__scanner">
+              <div class="scanner__head">
+                <div class="scanner__lidar"></div>
+              </div>
+              <div class="scanner__body"></div>
+              <div class="scanner__handle"></div>
+              <div class="scanner__grip"></div>
+              <div class="scanner__scanning">
+                <div class="scan-ring scan-ring--1"></div>
+                <div class="scan-ring scan-ring--2"></div>
+                <div class="scan-ring scan-ring--3"></div>
+              </div>
+              <div class="scanner__trail">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="equipment__terrain">
+              <div class="terrain__layer terrain__layer--grid"></div>
+              <div class="terrain__layer terrain__layer--contours"></div>
+              <div class="terrain__layer terrain__layer--glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fleet -->
+      <div class="equipment__fleet">
+        <div class="equipment__fleet-grid">
+          <article class="equip-card">
+            <div class="equip-card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 2v8M24 38v8M2 24h8M38 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4"/></svg>
+            </div>
+            <h4 class="equip-card__title">CHCNAV i80</h4>
+            <ul class="equip-card__specs">
+              <li>800 каналов, все созвездия</li>
+              <li>RTK: 8 мм + 1 ppm</li>
+              <li>IMU-компенсация до 60°</li>
+              <li>IP68, до 20 часов</li>
+            </ul>
+          </article>
+          <article class="equip-card">
+            <div class="equip-card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 2v8M24 38v8M2 24h8M38 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4"/></svg>
+            </div>
+            <h4 class="equip-card__title">CHCNAV i30</h4>
+            <ul class="equip-card__specs">
+              <li>Многочастотный, все GNSS</li>
+              <li>RTK: 10 мм + 1 ppm</li>
+              <li>Встроенный UHF-модем</li>
+              <li>IP67, до 14 часов</li>
+            </ul>
+          </article>
+          <article class="equip-card">
+            <div class="equip-card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36"><path d="M24 44 L24 12 M24 12 L10 28 M24 12 L38 28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="24" cy="44" r="2" fill="currentColor"/><path d="M24 12V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="equip-card__title">EFT TS1</h4>
+            <ul class="equip-card__specs">
+              <li>Точность углов: 2"</li>
+              <li>Дальномер: 500 м без отражателя</li>
+              <li>Лазерный отвес</li>
+              <li>Защита IP65</li>
+            </ul>
+          </article>
+          <article class="equip-card">
+            <div class="equip-card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36"><path d="M24 44 L24 12 M24 12 L10 28 M24 12 L38 28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="24" cy="44" r="2" fill="currentColor"/><path d="M24 12V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="equip-card__title">Leica TS06 / FlexLine</h4>
+            <ul class="equip-card__specs">
+              <li>Точность углов: 1–2"</li>
+              <li>PinPoint: лазер до 1000 м</li>
+              <li>С отражателем: до 3500 м</li>
+              <li>USB, Bluetooth, SD</li>
+            </ul>
+          </article>
+          <article class="equip-card">
+            <div class="equip-card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36"><path d="M6 38 C6 28 18 8 24 8 C30 8 42 28 42 38" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 38 C14 30 20 16 24 16 C28 16 34 30 34 38" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="38" r="4" fill="currentColor"/></svg>
+            </div>
+            <h4 class="equip-card__title">Radiodetection CAT4+</h4>
+            <ul class="equip-card__specs">
+              <li>Глубина поиска до 3 м</li>
+              <li>Режимы: Power / Radio / CATV</li>
+              <li>Генератор T1: 1–8 кГц</li>
+              <li>Поиск кабеля под напряжением</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Портфолио</span>
+        <h2 class="section__title">Примеры работ</h2>
+        <p class="section__desc">Результаты наших работ: топографические планы, цифровые модели рельефа, облака точек лазерного сканирования</p>
+      </div>
+    </div>
+    <div class="portfolio__grid">
+      <figure class="portfolio__item">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #e8d1b5 0%, #d4a5a5 100%);">
+          <span class="portfolio__placeholder">🗺</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Топографический план</h4>
+          <p>М 1:500, участок 12 Га, г. Симферополь</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item portfolio__item--wide">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #a3c4c4 0%, #5d8e8e 100%);">
+          <span class="portfolio__placeholder">🏔</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>ЦМР горной местности</h4>
+          <p>Лазерное сканирование, точность 2 см, Ай-Петри</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #d4a5a5 0%, #c9a88e 100%);">
+          <span class="portfolio__placeholder">🏗</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Сопровождение строительства</h4>
+          <p>Исполнительная съёмка, ЖК «Крымский»</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #5d8e8e 0%, #2a3c3f 100%);">
+          <span class="portfolio__placeholder">🔵</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Облако точек</h4>
+          <p>Промышленная площадка, 30 Га</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #c9a88e 0%, #e8d1b5 100%);">
+          <span class="portfolio__placeholder">📐</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Вынос границ</h4>
+          <p>Земельный участок, Бахчисарайский район</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item portfolio__item--wide">
+        <div class="portfolio__preview" style="background: linear-gradient(135deg, #2a3c3f 0%, #5d8e8e 100%);">
+          <span class="portfolio__placeholder">🏭</span>
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Съёмка тоннеля</h4>
+          <p>Лазерное сканирование, подземное сооружение</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="container">
+      <div class="portfolio__cta">
+        <p>Хотите увидеть больше работ? Свяжитесь с нами — покажем подходящие проекты.</p>
+        <a href="#contact" class="btn btn--primary">Запросить примеры →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATES ========== -->
+  <section class="section certificates" id="certificates">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Документы</span>
+        <h2 class="section__title">Сертификаты и допуски</h2>
+        <p class="section__desc">Вся документация в порядке: поверка оборудования и допуск кадастрового инженера</p>
+      </div>
+      <div class="certificates__grid">
+        <div class="cert-card">
+          <div class="cert-card__icon">📜</div>
+          <h4 class="cert-card__title">Допуск СРО</h4>
+          <p class="cert-card__desc">Кадастровый инженер имеет действующий допуск к кадастровым работам</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">✅</div>
+          <h4 class="cert-card__title">Поверка оборудования</h4>
+          <p class="cert-card__desc">Всё оборудование проходит регулярную метрологическую поверку</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">🛡</div>
+          <h4 class="cert-card__title">Страхование ответственности</h4>
+          <p class="cert-card__desc">Профессиональная ответственность застрахована</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">🔒</div>
+          <h4 class="cert-card__title">Конфиденциальность</h4>
+          <p class="cert-card__desc">Гарантируем неразглашение данных заказчика и результатов съёмки</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <span class="section__label">Связь</span>
+          <h2 class="section__title">Готовы обсудить ваш проект</h2>
+          <p class="contact__desc">Позвоните, напишите или оставьте заявку — мы подберём лучшее решение</p>
+          <div class="contact__details">
+            <div class="contact__row">
+              <span class="contact__label">Телефон</span>
+              <a href="tel:+79780000000" class="contact__value">+7 (978) 000-00-00</a>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Почта</span>
+              <a href="mailto:info@geolab.su" class="contact__value">info@geolab.su</a>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Регион</span>
+              <span class="contact__value">Республика Крым, вся РФ</span>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span>Telegram</span>
+            </a>
+            <a href="#" class="social-link" aria-label="VK">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C2.879 0 0 2.879 0 8.316v7.368C0 21.121 2.879 24 8.316 24h7.368C21.121 24 24 21.121 24 15.684V8.316C24 2.879 21.121 0 15.684 0zm3.606 16.772h-1.413c-.418 0-.55-.327-1.463-1.24-.74-.74-1.067-.872-1.25-.872-.3 0-.382.083-.382.5v1.094c0 .357-.12.518-1.09.518-1.595 0-3.358-.975-4.6-2.798-1.91-2.551-2.428-4.417-2.428-4.8 0-.2.083-.382.5-.382h1.413c.378 0 .518.166.657.575.716 2.074 1.9 3.893 2.388 3.893.184 0 .267-.083.267-.54v-2.11c-.055-.976-.566-1.054-.566-1.41 0-.166.132-.3.3-.3h2.22c.3 0 .4.166.4.516v2.782c0 .3.132.4.2.4.166 0 .3-.1.583-.382.9-1.01 1.542-2.59 1.542-2.59.083-.2.2-.3.5-.3h1.413c.3 0 .464.166.382.5-.2.934-1.54 3.097-1.54 3.097-.125.2-.166.3 0 .516.1.166.5.5.757.8.566.567 1.004 1.02 1.117 1.336.2.416-.066.6-.466.6z"/></svg>
+              <span>VK</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form__group">
+            <label for="name" class="form__label">Ваше имя</label>
+            <input type="text" id="name" class="form__input" placeholder="Как к вам обращаться?" required>
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">Телефон</label>
+            <input type="tel" id="phone" class="form__input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form__group">
+            <label for="service" class="form__label">Тип работ</label>
+            <select id="service" class="form__input">
+              <option value="">Выберите направление</option>
+              <option>Топографическая съёмка</option>
+              <option>Лазерное сканирование</option>
+              <option>Вынос границ участка</option>
+              <option>Кадастровые работы</option>
+              <option>Поиск коммуникаций</option>
+              <option>Сопровождение строительства</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label">Описание задачи</label>
+            <textarea id="message" class="form__input form__textarea" placeholder="Опишите объект, местоположение, требуемые работы..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <p class="form__note">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <span class="logo__mark">
+              <span class="compass">
+                <span class="compass__needle"></span>
+              </span>
+              <span class="lidar-dots">
+                <span></span><span></span><span></span><span></span>
+              </span>
+            </span>
+            <span class="logo__text">
+              <span class="logo__title">Geo<span class="logo__accent">Lab</span></span>
+              <span class="logo__subtitle">ГеоЛаборатория</span>
+            </span>
+          </a>
+          <p class="footer__tagline">Геодезические работы в Крыму и по всей России</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="#services">Классическая геодезия</a></li>
+              <li><a href="#services">Лазерное сканирование</a></li>
+              <li><a href="#services">Кадастровые работы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="tel:+79780000000">+7 (978) 000-00-00</a></li>
+              <li><a href="mailto:info@geolab.su">info@geolab.su</a></li>
+              <li>Республика Крым, РФ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 GeoLab. Все права защищены.</span>
+        <span>Сайт разработан <a href="#" style="color: inherit;">в студии</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING MESSENGERS ========== -->
+  <div class="floating-socials" id="floatingSocials">
+    <a href="#" class="floating-btn floating-btn--whatsapp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+    <a href="#" class="floating-btn floating-btn--telegram" aria-label="Telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    </a>
+    <a href="#" class="floating-btn floating-btn--phone" aria-label="Позвонить">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
