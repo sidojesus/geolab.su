@@ -524,8 +524,45 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   color: var(--color-text-soft, var(--color-dark));
 }
 
-.hero__feature-icon {
-  font-size: 1.2rem;
+/* SVG icons - consistent set from Lucide */
+.icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
+}
+.icon-svg--feature {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.icon-svg--card {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+.icon-svg--about {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+.icon-svg--portfolio {
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.8;
+}
+.icon-svg--cert {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 16px;
+  margin-inline: auto;
+  color: var(--color-primary);
 }
 
 /* Hero Visual (декоративные фигуры) */
@@ -653,12 +690,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   border-left: 3px solid var(--color-primary);
 }
 
-.service-card__icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  line-height: 1;
-}
-
 .service-card__title {
   font-size: 1.1rem;
   font-weight: 600;
@@ -741,11 +772,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .about__card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-}
-
-.about__card-icon {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
 }
 
 .about__card h4 {
@@ -1706,11 +1732,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   aspect-ratio: 2/1;
 }
 
-.portfolio__placeholder {
-  font-size: 3rem;
-  opacity: 0.8;
-}
-
 .portfolio__caption {
   padding: 16px 20px;
 }
@@ -1763,11 +1784,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .cert-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-}
-
-.cert-card__icon {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
 }
 
 .cert-card__title {
