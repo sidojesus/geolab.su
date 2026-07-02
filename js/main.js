@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // REVEAL ON SCROLL (Intersection Observer)
   // =========================================================
   const revealElements = document.querySelectorAll(
-    '.service-card, .about__card, .cert-card, .portfolio__item, .about__stats, .equipment__inner, .contact__inner, .section__header'
+    '.service-card, .about__card, .cert-card, .portfolio__item, .gallery__item, .about__stats, .equipment__inner, .contact__inner, .section__header'
   );
 
   const revealObserver = new IntersectionObserver((entries) => {
