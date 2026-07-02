@@ -86,9 +86,20 @@
           <div class="hero__feature">
             <svg class="icon-svg icon-svg--feature" aria-hidden="true"><use href="assets/icons/sprite.svg#map"/></svg>
             <span>До 30 Га за выезд</span>
+          </div>
         </div>
       </div>
 
+      <div class="hero__visual">
+        <span class="hero__shape hero__shape--1"></span>
+        <span class="hero__shape hero__shape--2"></span>
+        <span class="hero__shape hero__shape--3"></span>
+      </div>
+
+    </div>
+    <div class="hero__scroll" id="scrollDown">
+      <span>Листайте вниз</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
     </div>
   </section>
 
@@ -413,57 +424,66 @@
     </div>
     <div class="portfolio__grid">
       <figure class="portfolio__item">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #e8d1b5 0%, #d4a5a5 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#map"/></svg>
+        <div class="portfolio__preview">
+          <img src="assets/images/topo-plan.png" alt="Топографический план" loading="lazy">
         </div>
         <figcaption class="portfolio__caption">
           <h4>Топографический план</h4>
-          <p>М 1:500, участок 12 Га, г. Симферополь</p>
+          <p>Фрагмент топосъёмки, масштаб 1:500</p>
         </figcaption>
       </figure>
       <figure class="portfolio__item portfolio__item--wide">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #a3c4c4 0%, #5d8e8e 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#mountain"/></svg>
+        <div class="portfolio__preview">
+          <img src="assets/images/relief-model.png" alt="Цифровая модель рельефа" loading="lazy">
         </div>
         <figcaption class="portfolio__caption">
-          <h4>ЦМР горной местности</h4>
-          <p>Лазерное сканирование, точность 2 см, Ай-Петри</p>
+          <h4>Цифровая модель рельефа</h4>
+          <p>Лазерное сканирование, точность 2 см</p>
         </figcaption>
       </figure>
       <figure class="portfolio__item">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #d4a5a5 0%, #c9a88e 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#hard-hat"/></svg>
+        <div class="portfolio__preview">
+          <img src="assets/images/contours-stockpile.png" alt="Горизонтали и отвал" loading="lazy">
         </div>
         <figcaption class="portfolio__caption">
-          <h4>Сопровождение строительства</h4>
-          <p>Исполнительная съёмка, ЖК «Крымский»</p>
+          <h4>Горизонтали и отвал</h4>
+          <p>Подсчёт объёмов земляных работ</p>
         </figcaption>
       </figure>
-      <figure class="portfolio__item">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #5d8e8e 0%, #2a3c3f 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#box"/></svg>
+      <figure class="portfolio__item portfolio__item--wide">
+        <div class="portfolio__preview">
+          <video src="assets/images/pointcloud-demo.mp4" autoplay muted loop playsinline poster="assets/images/relief-model.png"></video>
         </div>
         <figcaption class="portfolio__caption">
           <h4>Облако точек</h4>
-          <p>Промышленная площадка, 30 Га</p>
+          <p>Лазерное сканирование местности, облёт 3D-модели</p>
         </figcaption>
       </figure>
       <figure class="portfolio__item">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #c9a88e 0%, #e8d1b5 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#triangle"/></svg>
+        <div class="portfolio__preview">
+          <img src="assets/images/relief-model-2.png" alt="Модель рельефа" loading="lazy">
         </div>
         <figcaption class="portfolio__caption">
-          <h4>Вынос границ</h4>
-          <p>Земельный участок, Бахчисарайский район</p>
+          <h4>Модель рельефа</h4>
+          <p>Построение ЦМР по данным лазерного сканирования</p>
         </figcaption>
       </figure>
       <figure class="portfolio__item portfolio__item--wide">
-        <div class="portfolio__preview" style="background: linear-gradient(135deg, #2a3c3f 0%, #5d8e8e 100%);">
-          <svg class="icon-svg icon-svg--portfolio" aria-hidden="true"><use href="assets/icons/sprite.svg#factory"/></svg>
+        <div class="portfolio__preview">
+          <img src="assets/images/relief-model-contours.png" alt="Модель рельефа с горизонталями" loading="lazy">
         </div>
         <figcaption class="portfolio__caption">
-          <h4>Съёмка тоннеля</h4>
-          <p>Лазерное сканирование, подземное сооружение</p>
+          <h4>Модель рельефа с горизонталями</h4>
+          <p>Создание регулярной сетки (GRID) и TIN-модели</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__item">
+        <div class="portfolio__preview">
+          <img src="assets/images/relief-model-3.png" alt="Модель рельефа" loading="lazy">
+        </div>
+        <figcaption class="portfolio__caption">
+          <h4>Модель рельефа</h4>
+          <p>Цифровая модель рельефа по данным лазерного сканирования</p>
         </figcaption>
       </figure>
     </div>
@@ -519,11 +539,11 @@
           <div class="contact__details">
             <div class="contact__row">
               <span class="contact__label">Телефон</span>
-              <a href="tel:+79780000000" class="contact__value">+7 (978) 000-00-00</a>
+              <a href="tel:+79785592008" class="contact__value">+7 (978) 559-20-08</a>
             </div>
             <div class="contact__row">
               <span class="contact__label">Почта</span>
-              <a href="mailto:info@geolab.su" class="contact__value">info@geolab.su</a>
+              <a href="mailto:geolab.su@yandex.com" class="contact__value">geolab.su@yandex.com</a>
             </div>
             <div class="contact__row">
               <span class="contact__label">Регион</span>
@@ -531,7 +551,7 @@
             </div>
           </div>
           <div class="contact__socials">
-            <a href="#" class="social-link" aria-label="WhatsApp">
+            <a href="https://wa.me/79785592008" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
               <span>WhatsApp</span>
             </a>
@@ -611,15 +631,15 @@
           <div class="footer__col">
             <h4>Контакты</h4>
             <ul>
-              <li><a href="tel:+79780000000">+7 (978) 000-00-00</a></li>
-              <li><a href="mailto:info@geolab.su">info@geolab.su</a></li>
+              <li><a href="tel:+79785592008">+7 (978) 559-20-08</a></li>
+              <li><a href="mailto:geolab.su@yandex.com">geolab.su@yandex.com</a></li>
               <li>Республика Крым, РФ</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2024 GeoLab. Все права защищены.</span>
+        <span>© <span id="currentYear">2026</span> GeoLab. Все права защищены.</span>
         <span>Сайт разработан <a href="#" style="color: inherit;">в студии</a></span>
       </div>
     </div>
@@ -627,7 +647,7 @@
 
   <!-- ========== FLOATING MESSENGERS ========== -->
   <div class="floating-socials" id="floatingSocials">
-    <a href="#" class="floating-btn floating-btn--whatsapp" aria-label="WhatsApp">
+    <a href="https://wa.me/79785592008" class="floating-btn floating-btn--whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     </a>
     <a href="#" class="floating-btn floating-btn--telegram" aria-label="Telegram">

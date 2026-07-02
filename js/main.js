@@ -324,4 +324,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('GeoLab — Геодезия в Крыму');
   console.log('Сайт загружен успешно ✓');
+
+  // =========================================================
+  // ГОД В ФУТЕРЕ
+  // =========================================================
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
